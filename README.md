@@ -1,5 +1,7 @@
 ## Pre-commit
 
+For now, `CPP_Practice` supports google style cpp formatting with `clang-format`.
+
 You can apply pre-commit with following commands:
 
 ```bash
