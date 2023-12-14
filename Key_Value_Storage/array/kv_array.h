@@ -10,24 +10,26 @@ using namespace std;
 
 typedef pair<string, string> Node;
 
-// Node Node;
+//Node Node;
 
-class array_storage {
- public:
-  array_storage();
-  ~array_storage();
+class array_storage{
 
-  int BS(string key, int begin, int end);
+public:
+    array_storage();
+    ~array_storage();
 
-  void put(string key, string value, bool sortFlag);
-  string get(string key);
-  void remove(string key);
-  void display();
+    int BS(string key, int begin, int end);
 
- private:
-  // Node *A = new Node[NR_TESTS];
-  Node A[NR_TESTS];
-  int tail = 0;
+    void put(string key, string value, bool sortFlag);
+    string get(string key);
+    void remove(string key);
+    void display();
+
+private:
+    //Node *A = new Node[NR_TESTS];
+    Node A[NR_TESTS];
+    int tail = 0;
+    
 };
 
 #endif

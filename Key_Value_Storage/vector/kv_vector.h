@@ -8,25 +8,27 @@ using namespace std;
 
 typedef pair<string, string> Node;
 
-// Node Node;
+//Node Node;
 
 typedef vector<Node> VECTOR;
 
-class VectorContainer {
- public:
-  VectorContainer();
-  ~VectorContainer();
+class VectorContainer{
 
-  int BS(string key, int begin, int end);
+public:
+    VectorContainer();
+    ~VectorContainer();
 
-  void put(string key, string value, bool sortFlag);
-  string get(string key);
-  void remove(string key);
-  void display();
+    int BS(string key, int begin, int end);
 
- private:
-  // Node Node;
-  VECTOR V;
+    void put(string key, string value, bool sortFlag);
+    string get(string key);
+    void remove(string key);
+    void display();
+
+private:
+    //Node Node;
+    VECTOR V;
+    
 };
 
 #endif
